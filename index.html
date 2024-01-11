@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <title>Jammming</title>
+        
+    </head>
+    <body>
+        <script type="module" src="./index.js"></script>
+        <script type="module" src="./components/App.js"></script>
+        <script type="module" src="./components/Playlist.js"></script>
+        <script type="module" src="./components/SearchBar.js"></script>
+        <script type="module" src="./components/SearchResults.js"></script>
+        <script type="module" src="./components/Track.js"></script>
+        <script type="module" src="./components/Tracklist.js"></script>
+        <div id="root">
+            <h1>
+                "Ja"
+                <span class="highlight">mmm</span>
+                "ing"
+            </h1>
+            <div class="App">
+                <div class="SearchBar">
+                    <input placeholder="Enter A Song Title">
+                    <SearchBar/>
+                    </input>
+                    <button>SEARCH</button>
+                </div>
+                <div class="App-playlist">
+                    <div class="SearchResults">
+                        <h2>Results</h2>
+                    </div>
+                        <div class="TrackList" id="Track">
+                            <div class="Track">
+                                <div class="Track-information">
+                                    <button class="Track-action">+</button>
+                                </div>
+                            </div>
+                            <div class="Track">
+                                <div class="Track-information">
+                                    <button class="Track-action">+</button>
+                                </div>
+                            </div>
+                            <div class="Track">
+                                <div class="Track-information">
+                                    <button class="Track-action">+</button>
+                                </div>
+                            </div>
+                            <div class="Track">
+                                <div class="Track-information">
+                                    <button class="Track-action">+</button>
+                                </div>
+                            </div>
+                            <div class="Track">
+                                <div class="Track-information">
+                                    <button class="Track-action">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Playlist">
+                            <input type="text" value="New Playlist" placeholder="New Playlist"/>  
+                            <div class="TrackList">
+                                <div class="Track">
+                                    <div class="Track-information">
+                                        <button class="Track-action">-</button>
+                                    </div>
+                                    <div class="Track-information">
+                                        <button class="Track-action">-</button>
+                                    </div>
+                                    <div class="Track-information">
+                                        <button class="Track-action">-</button>
+                                    </div>
+                                </div>
+                                <button onClick={submit} class="Playlist-save">SAVE TO SPOTIFY</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
