@@ -1,0 +1,12 @@
+html {
+    background-image: url('./app/resources/erik-mclean-QzpgqElvSiA-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    font-size: 16px;
+    font-family: "fantasy";
+}
+button {
+    border-radius: 35px;
+}

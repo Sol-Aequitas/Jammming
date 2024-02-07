@@ -1,0 +1,23 @@
+.SearchResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 37%;
+    max-height: 950px;
+    overflow-y: scroll;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 2px 2px rgb(122, 0, 128);
+
+}
+.SearchResults input:focus {
+    outline: none;
+}
+
+
+
+@media only screen and (max-width: 1020px) {
+    .SearchResults{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
